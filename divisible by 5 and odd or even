@@ -1,0 +1,14 @@
+let num = prompt(" Enter a number:");
+console.log("The number Entered :", num);
+if (num % 5 === 0) {
+   console.log(num, "is multiple of 5");
+} else {
+  console.log(num, " not mutiple of 5"); 
+}
+let number = prompt( "enter a number:" );
+console.log("The number Entered :", number);
+if (number % 2 === 0) {
+   console.log(number, "is even number");
+} else {
+  console.log(number, " is odd number"); 
+}
