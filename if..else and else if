@@ -1,0 +1,12 @@
+let mode = "light";
+let colour;
+if (mode === "dark") {
+    colour = "blaclk";
+}else if(mode === "blue"){
+colour = "blue";
+}else if(mode === "pink"){
+colour = "pink";
+}else{
+colour = "white";
+}
+console.log(colour);
