@@ -1,0 +1,11 @@
+const product={
+prodctName: "Apple iPhone 16",
+storage: 128,
+colour: "Green",
+rating: 4.5,
+price: 61499,
+isAnyDiscount: false,
+boughtInLastMonth: 500
+}
+ console.log(product);
+;
