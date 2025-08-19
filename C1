@@ -1,0 +1,10 @@
+const student={
+fullName: "Rohit Rohan Mishra",
+university: "OUTR",
+city: "Bhubaneswar",
+age: 25,
+CGPA: 8.8,
+isPassed: true
+}
+ console.log(student);
+;
