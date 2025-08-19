@@ -1,0 +1,8 @@
+const instagram={
+profileName: "rohitrohanmishra",
+followers: 149,
+following: 215,
+posts: 5
+}
+ console.log(instagram);
+;
