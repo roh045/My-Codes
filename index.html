@@ -1,3 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="csrf-token" content="">
+    <title>Acme Bank — Sign in</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="brand">
+            <img src="./assets/logo.svg" alt="Acme Bank" class="brand-logo" width="28" height="28">
+            <span class="brand-name">Acme Bank</span>
+        </div>
+    </header>
+
+    <main id="main" class="main" role="main">
+        <section class="auth" aria-labelledby="signin-title">
+            <div class="auth-card" role="region" aria-describedby="form-help">
+                <h1 id="signin-title" class="auth-title">Sign in</h1>
+
+                <p id="form-help" class="muted">Access your accounts securely. Do not share your credentials.</p>
+
+                <div id="form-alert" class="alert" role="alert" aria-live="polite" hidden></div>
+
+                <form id="login-form" novalidate>
+                    <div class="form-field">
+                        <label for="username">Username or Email</label>
+                        <input id="username" name="username" type="text" inputmode="email" autocomplete="username" required aria-describedby="username-error">
+                        <p id="username-error" class="field-error" role="status" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <div class="label-row">
+                            <label for="password">Password</label>
+                            <button type="button" class="link sm" id="toggle-password" aria-controls="password" aria-pressed="false">Show</button>
+                        </div>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" aria-describedby="password-error">
+                        <p id="password-error" class="field-error" role="status" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-row between">
+                        <label class="checkbox">
+                            <input type="checkbox" id="remember" name="remember" autocomplete="on">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="link">Forgot password?</a>
+                    </div>
+
+                    <button id="submit-btn" class="btn primary" type="submit" data-default-label="Sign in">
+                        <span class="btn-label">Sign in</span>
+                        <span class="spinner" aria-hidden="true" hidden></span>
+                    </button>
+                </form>
+
+                <p class="security-note" role="note">
+                    Tip: Ensure the URL shows a lock icon and starts with https.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <nav aria-label="Legal">
+            <a href="#" class="link">Privacy</a>
+            <span aria-hidden="true">·</span>
+            <a href="#" class="link">Security</a>
+            <span aria-hidden="true">·</span>
+            <a href="#" class="link">Terms</a>
+        </nav>
+        <p class="muted">© <span id="year"></span> Acme Bank</p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
+
 <!doctype html>
 <html lang="en">
   <head>
